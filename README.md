@@ -16,3 +16,13 @@ KoWiki Langlinks 파일 다운로드 주소
 ```
 python -s {SOURCE_FILE} -d {DESTINATION_FILE} -lang {TARGET_LANGUAGE}
 ```
+
+### 저장 데이터 포맷
+- Page ID
+- Target Language
+- Title
+
+### Page ID 사용법
+```
+https://ko.wikipedia.org/?curid={PAGE_ID}
+```

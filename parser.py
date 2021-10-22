@@ -20,6 +20,10 @@ def parse(source_file_name, destination_file_name, lang="all"):
 
                 for other_lang_link in other_lang_links:
                     fields = other_lang_link.split(",")
+                    fields[1] = fields[1][1:-1]
+
+                    if fields == "en":
+                        print()
 
                     if len(fields) == 3:
                         if lang == "all":
@@ -42,7 +46,7 @@ if __name__ == "__main__":
 
     parser.add_argument("-s", required=True, type=str)
     parser.add_argument("-d", default="wiki_interlang.csv")
-    parser.add_argument("-lang", default="all")
+    parser.add_argument("-lang", default="en")
 
     args = parser.parse_args()
 
