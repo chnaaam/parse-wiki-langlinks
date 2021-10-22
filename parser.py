@@ -46,4 +46,4 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    parse(source_file_name=args.f, destination_file_name=args.d, lang=args.lang)
+    parse(source_file_name=args.s, destination_file_name=args.d, lang=args.lang)
