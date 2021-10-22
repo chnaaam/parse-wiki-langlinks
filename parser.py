@@ -40,7 +40,7 @@ def parse(source_file_name, destination_file_name, lang="all"):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
-    parser.add_argument("-f", required=True, type=str)
+    parser.add_argument("-s", required=True, type=str)
     parser.add_argument("-d", default="wiki_interlang.csv")
     parser.add_argument("-lang", default="all")
 
